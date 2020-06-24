@@ -1,6 +1,6 @@
 # Ignition Wolf Landing Page
 
-This is the source code for Ignition Wolf Landing Page
+This is the source code of Snippets used for pages created by Ignition Wolf.
 
 ### Prerequisites
 
@@ -19,3 +19,4 @@ The only necessary files for production in a live server are located inside the 
 ```
 npm run prod
 ```
+
