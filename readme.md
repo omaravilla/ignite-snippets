@@ -1,4 +1,4 @@
-# Ignition Wolf Landing Page
+# Ignite Snippets
 
 This is the source code of Snippets used for pages created by Ignition Wolf.
 
