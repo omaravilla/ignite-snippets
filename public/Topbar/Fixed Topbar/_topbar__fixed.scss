@@ -1,0 +1,80 @@
+$topbar-height: 84px;
+
+.topbar-fixed {
+    background-color: black;
+    font-family: "Futura", sans-serif;
+    max-height: $topbar-height;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+
+    @include respond-above(md) {
+        padding: 10px 50px 10px 50px;
+        width:80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    @include respond-tablet() {
+        padding: 25px 20px 10px 20px;
+    }
+
+    ul {
+        margin: unset;
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        .topbar__brand {
+            // Nothing for now
+        }
+
+        .topbar__item {
+            padding: 0 20px;
+            font-size: 16px;
+            letter-spacing: 0.05rem;
+            text-transform: uppercase;
+            color: #383838;
+            font-weight: 500;
+            
+            @include respond-below(md) {
+                display: none;
+            }
+
+            @include respond-below(lg) {
+                font-size: 10px;
+            }
+
+            &:nth-child(2) {
+                margin-left: auto;
+            }
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            i {
+                color: white;
+                font-size: 30px;
+                padding: 0 10px;
+            }
+        }
+        .topbar__item--shopwave {
+            @include respond-below(md) {
+                margin-left: auto;
+                display: inline;
+            }
+        }
+        .topbar__item--menu {
+            display: none;
+            @include respond-below(md) {
+                display: inline;
+            }
+        }
+    }  
+}
+
+.sticky {
+    background-color: white;
+}
